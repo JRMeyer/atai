@@ -1,0 +1,32 @@
+SIL SIL
+SPOKEN_NOISE SPOKEN_NOISE
+a a
+ch ch zh
+e e
+g g
+h h
+i i
+ih ih
+j j
+k k
+l l
+m m
+n n
+ng ng
+o o
+oe oe
+p p b
+r r
+s s z
+sh sh 
+t t d 
+u u
+v v
+y y
+
+
+
+sed -i -e "s/zh/ch/g" lexicon_no_voice*
+sed -i -e "s/b/p/g" lexicon_no_voice*
+sed -i -e "s/z/s/g" lexicon_no_voice*
+sed -i -e "s/d/t/g" lexicon_no_voice*

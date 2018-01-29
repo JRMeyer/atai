@@ -1,0 +1,36 @@
+SIL SIL
+SPOKEN_NOISE SPOKEN_NOISE
+p p b t d g k 
+a a e i ih o oe u y
+ch ch zh
+h h f v s z sh
+l j l
+n m n ng
+r r
+
+
+fricative = h,f,v,z,s,sh
+affricate = ch,zh
+nasal = n,m,ng
+trill = r
+approximant = l,j
+vowel = a,e,i,o,oe,u,y,ih
+
+
+a - vowel
+ch - affricate
+l - approximant
+n - nasal
+p - plosive
+r - trill
+h - fricative
+
+
+# this order should work
+
+sed -Ei "s/m|ng/n/g" lexicon_manner*
+sed -Ei "s/b|t|d|g|k/p/g" lexicon_manner*
+sed -Ei "s/a|e|i|ih|o|oe|u|y/a/g" lexicon_manner*
+sed -Ei "s/zh/ch/g" lexicon_manner*
+sed -Ei "s/f|v|s|z|sh/h/g" lexicon_manner*
+sed -Ei "s/j|l/l/g" lexicon_manner*

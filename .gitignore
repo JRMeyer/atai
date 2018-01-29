@@ -1,0 +1,4 @@
+# audio files
+*.wav
+# emacs tmp files
+*~
